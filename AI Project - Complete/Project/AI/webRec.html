@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Classification</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+	<script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+	<script src="webcam-sketch.js"></script>
+</head>
+<style>
+
+body {
+  	background-color: #FF5733;
+  	font-family: Arial;
+	font-size: 23px;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+#webcam-canvas {
+  max-width: 680px !important;
+  padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+</style>
+<body>
+
+	<div class="container" id='main'>
+		<h1 class="page-header">Object Classification using a webcam</h1>
+		<p class='lead'>Use this page to activate the webcam to use within the neural network. Press the button!</p>
+		<div class="row">
+			<div class= "col-sm-9" id="webcam-canvas"></div>
+			<div class="col-sm-9"><p class="lead" id="results">Loading Software</p></div>
+		</div>
+	</div>
+
+</body>
+</html>
