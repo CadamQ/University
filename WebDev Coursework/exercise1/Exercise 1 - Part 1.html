@@ -1,0 +1,21 @@
+<script>
+var n, sum = 0, temp;
+do{
+	do{
+	n = prompt("How many integers would you like to add up?");
+	}
+	while(isNaN(n));
+}
+while(n <= 0);
+//var arrayOfNums = new Array[n];
+for (var i = 0 ; i < n ; i++)
+{
+	do{
+	temp = parseInt(prompt("Enter integer #" + (i+1)));
+	}
+	while(isNaN(temp));
+	//arrayOfNums[i] = temp;
+	sum += temp;
+}
+alert(sum);
+</script>

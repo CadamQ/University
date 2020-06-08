@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<script type="text/javascript">
+window.onload = function() 
+	{
+		loadXMLDoc();
+	};
+</script>
+
+
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      getStudents(this);
+    }
+  };
+  xmlhttp.open("GET", "Exercise4.xml", true);
+  xmlhttp.send();
+}
+function getStudents(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th><b>Name</b></th><th><b>Age</b></th></tr>";
+  var x = xmlDoc.getElementsByTagName("STUDENT");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("AGE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
+
+<!-- https://www.w3schools.com/xml/tryit.asp?filename=tryxml_display_table --> 

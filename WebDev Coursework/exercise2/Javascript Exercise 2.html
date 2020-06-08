@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Concatenate Text Fields</h2>
+
+<form id="textFields">
+    <input type="text" name="text1" ><br >
+	<input type="text" name="text2" ><br >
+	<input type="text" name="text3" ><br >
+	<input type="text" name="text4" ><br >
+	<input type="text" name="text5" ><br >
+	<input type="text" name="text6" ><br >
+</form>
+
+
+
+<button onclick="Concatenate()">Click to concatenate text fields</button> 
+<input type="button" id="addField" value="Add Text Field" />
+
+
+
+<script>
+var num = 6;
+function Concatenate() {
+var formElement = document.getElementById("textFields");
+var text = "";
+    for (var i = 0; i < formElement.length ;i++) {
+        text += formElement.elements[i].value + " ";
+    }
+    document.getElementById("textBox").innerHTML = text;
+}
+
+
+document.getElementById("addField").onclick = function() {
+	num++;
+    var form = document.getElementById("textFields");
+    var input = document.createElement("input");
+    input.type = "text";
+    var br = document.createElement("br");
+    form.appendChild(input);
+    form.appendChild(br);
+	
+	document.getElementById("textBoxNum").innerHTML = "You have " + num + " text fields";
+}
+
+</script>
+
+<p id="textBox"></p>
+<p id="textBoxNum"></p>
+
+
+</body>
+</html> 

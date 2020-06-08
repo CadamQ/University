@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Exercise4.xsl"?>
+<CLASS>
+	<STUDENT>
+		<NAME>Tom</NAME>
+		<AGE>19</AGE>
+		<HEIGHT>1.3</HEIGHT>
+		<SEX>M</SEX>
+		<GRADE>B</GRADE>
+	</STUDENT>
+	
+	<STUDENT>
+		<NAME>Dick</NAME>
+		<AGE>29</AGE>
+		<HEIGHT>1.1</HEIGHT>
+		<SEX>M</SEX>
+		<GRADE>A</GRADE>
+	</STUDENT>
+	
+	<STUDENT>
+		<NAME>Harry</NAME>
+		<AGE>39</AGE>
+		<HEIGHT>1.5</HEIGHT>
+		<SEX>M</SEX>
+		<GRADE>C</GRADE>
+	</STUDENT>
+	
+	<STUDENT>
+		<NAME>Mary</NAME>
+		<AGE>30</AGE>
+		<HEIGHT>1.1</HEIGHT>
+		<SEX>F</SEX>
+		<GRADE>A</GRADE>
+	</STUDENT>
+	
+	<STUDENT>
+		<NAME>Tim</NAME>
+		<AGE>23</AGE>
+		<HEIGHT>1.5</HEIGHT>
+		<SEX>M</SEX>
+		<GRADE>A</GRADE>
+		</STUDENT>
+</CLASS>
